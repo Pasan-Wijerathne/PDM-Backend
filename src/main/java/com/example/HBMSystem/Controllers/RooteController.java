@@ -10,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/test/rest/")
+
 public class RooteController {
 
 
@@ -26,10 +27,12 @@ public class RooteController {
     }
 
     //add to db // Craate //update
-   /* @PostMapping(consumes = "äpplication/json", path = "/addUser")
-    public TestEntity createTest(@RequestBody TestEntity test){
-      return repo.save(test);
-    }*/
+//    @PostMapping(consumes = "äpplication/json", path = "/addUser")
+//    public TestEntity createTest(@RequestBody TestEntity test){
+//      return repo.save(test);
+//    }
+
+    @PostMapping()
 
     //delete from db
     public void deleteTest(@RequestBody  TestEntity test){
