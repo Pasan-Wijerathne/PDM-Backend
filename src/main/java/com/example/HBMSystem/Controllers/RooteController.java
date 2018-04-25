@@ -1,6 +1,8 @@
-package com.example.HBMSystem;
+package com.example.HBMSystem.Controllers;
 
 
+import com.example.HBMSystem.Modulars.TestEntity;
+import com.example.HBMSystem.Repos.TestRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,4 +1,4 @@
-package com.example.HBMSystem;
+package com.example.HBMSystem.Modulars;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
