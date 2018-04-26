@@ -1,8 +1,5 @@
 package com.example.HBMSystem.Modulars;
 
-
-import org.hibernate.annotations.JoinColumnOrFormula;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -11,17 +8,15 @@ import java.sql.Blob;
 import java.util.Date;
 
 @Entity
-@Table(name = "electricity")
-public class electricity
-{
-    @Id
-    private int id;
+@Table(name = "electricitybill")
 
-    @Column
+public class Electricity1 {
+
+    @Id
     private int no;
 
     @Column
-    private int Acc;
+    private int AccNo;
 
     @Column
     private float usedUnits;
@@ -30,21 +25,13 @@ public class electricity
     private String UserId;
 
     @Column
-    private java.util.Date Date;
+    private Date Date;
 
     @Column
     private float TotalAmount;
 
     @Column
     private Blob AddImage;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public int getNo() {
         return no;
@@ -54,12 +41,12 @@ public class electricity
         this.no = no;
     }
 
-    public int getAcc() {
-        return Acc;
+    public int getAccNo() {
+        return AccNo;
     }
 
-    public void setAcc(int acc) {
-        Acc = acc;
+    public void setAccNo(int accNo) {
+        AccNo = accNo;
     }
 
     public float getUsedUnits() {
