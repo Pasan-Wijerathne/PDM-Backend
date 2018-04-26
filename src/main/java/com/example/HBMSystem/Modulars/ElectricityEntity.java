@@ -8,7 +8,7 @@ import java.sql.Blob;
 import java.util.Date;
 
 @Entity
-@Table(name="electricitybill")
+@Table(name = "electricitybill")
 
 public class ElectricityEntity {
 
@@ -16,22 +16,22 @@ public class ElectricityEntity {
     private int no;
 
     @Column
-    private int AccNo;
+    private int accno;
 
     @Column
-    private float usedUnits;
+    private float usedunits;
 
     @Column
-    private String UserId;
+    private String userid;
 
     @Column
-    private Date Date;
+    private Date date;
 
     @Column
-    private float TotalAmount;
+    private float totalamount;
 
     @Column
-    private Blob AddImage;
+    private Blob addimage;
 
     public int getNo() {
         return no;
@@ -41,51 +41,51 @@ public class ElectricityEntity {
         this.no = no;
     }
 
-    public int getAccNo() {
-        return AccNo;
+    public int getAccno() {
+        return accno;
     }
 
-    public void setAccNo(int accNo) {
-        AccNo = accNo;
+    public void setAccno(int accno) {
+        this.accno = accno;
     }
 
-    public float getUsedUnits() {
-        return usedUnits;
+    public float getUsedunits() {
+        return usedunits;
     }
 
-    public void setUsedUnits(float usedUnits) {
-        this.usedUnits = usedUnits;
+    public void setUsedunits(float usedunits) {
+        this.usedunits = usedunits;
     }
 
-    public String getUserId() {
-        return UserId;
+    public String getUserid() {
+        return userid;
     }
 
-    public void setUserId(String userId) {
-        UserId = userId;
+    public void setUserid(String userid) {
+        this.userid = userid;
     }
 
-    public java.util.Date getDate() {
-        return Date;
+    public Date getDate() {
+        return date;
     }
 
-    public void setDate(java.util.Date date) {
-        Date = date;
+    public void setDate(Date date) {
+        this.date = date;
     }
 
-    public float getTotalAmount() {
-        return TotalAmount;
+    public float getTotalamount() {
+        return totalamount;
     }
 
-    public void setTotalAmount(float totalAmount) {
-        TotalAmount = totalAmount;
+    public void setTotalamount(float totalamount) {
+        this.totalamount = totalamount;
     }
 
-    public Blob getAddImage() {
-        return AddImage;
+    public Blob getAddimage() {
+        return addimage;
     }
 
-    public void setAddImage(Blob addImage) {
-        AddImage = addImage;
+    public void setAddimage(Blob addimage) {
+        this.addimage = addimage;
     }
 }
