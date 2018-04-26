@@ -10,19 +10,19 @@ import java.util.Date;
 @Table(name="vehicle")
 
 public class vehicle {
+
     @Id
     private int no;
     @Column
-    private String expencesType;
+    private String expensestype;
     @Column
     private String description;
     @Column
-    private String UserId;
+    private String userid;
     @Column
-    private Date Date;
+    private Date date;
     @Column
     private float totalamount;
-
 
     public int getNo() {
         return no;
@@ -32,12 +32,12 @@ public class vehicle {
         this.no = no;
     }
 
-    public String getExpencesType() {
-        return expencesType;
+    public String getExpensestype() {
+        return expensestype;
     }
 
-    public void setExpencesType(String expencesType) {
-        this.expencesType = expencesType;
+    public void setExpensestype(String expensestype) {
+        this.expensestype = expensestype;
     }
 
     public String getDescription() {
@@ -48,20 +48,20 @@ public class vehicle {
         this.description = description;
     }
 
-    public String getUserId() {
-        return UserId;
+    public String getUserid() {
+        return userid;
     }
 
-    public void setUserId(String userId) {
-        UserId = userId;
+    public void setUserid(String userid) {
+        this.userid = userid;
     }
 
-    public java.util.Date getDate() {
-        return Date;
+    public Date getDate() {
+        return date;
     }
 
-    public void setDate(java.util.Date date) {
-        Date = date;
+    public void setDate(Date date) {
+        this.date = date;
     }
 
     public float getTotalamount() {
@@ -71,6 +71,29 @@ public class vehicle {
     public void setTotalamount(float totalamount) {
         this.totalamount = totalamount;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
