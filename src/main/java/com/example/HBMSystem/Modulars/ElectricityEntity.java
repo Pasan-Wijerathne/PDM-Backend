@@ -10,7 +10,7 @@ import java.util.Date;
 @Entity
 @Table(name = "electricitybill")
 
-public class Electricity1 {
+public class ElectricityEntity {
 
     @Id
     private int no;

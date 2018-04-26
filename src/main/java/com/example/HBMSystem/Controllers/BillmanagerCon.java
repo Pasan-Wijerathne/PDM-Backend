@@ -1,8 +1,8 @@
 package com.example.HBMSystem.Controllers;
 
 
-import com.example.HBMSystem.Modulars.Electricity1;
-import com.example.HBMSystem.Repos.Electricitybill1;
+import com.example.HBMSystem.Modulars.ElectricityEntity;
+import com.example.HBMSystem.Repos.ElectricitybillRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,22 +14,22 @@ import java.util.List;
 public class BillmanagerCon {
 
     @Autowired
-    private Electricitybill1 eb;
+    private ElectricitybillRepo eb;
 
 
     @GetMapping("/elecbillread")
-    public List<Electricity1> getAll(){
+    public List<ElectricityEntity> getAll(){
         return eb.findAll();
     }
 
     @PostMapping ("/elecbilladdedit")
-    public Electricity1 createbill(@RequestBody Electricity1 electricitybill){
+    public ElectricityEntity createbill(@RequestBody ElectricityEntity electricitybill){
         return eb.save(electricitybill);
     }
 
     //delete from db
     @DeleteMapping("/elecbilldel")
-    public void deletebill(@RequestBody  Electricity1 electricitybill){
+    public void deletebill(@RequestBody ElectricityEntity electricitybill){
         eb.delete(electricitybill);
     }
 
