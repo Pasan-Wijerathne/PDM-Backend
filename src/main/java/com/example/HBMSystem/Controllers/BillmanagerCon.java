@@ -16,12 +16,13 @@ public class BillmanagerCon {
     @Autowired
     private ElectricitybillRepo eb;
 
-
+    //read from db
     @GetMapping("/elecbillread")
     public List<ElectricityEntity> getAll(){
         return eb.findAll();
     }
 
+    //add edit from db
     @PostMapping ("/elecbilladdedit")
     public ElectricityEntity createbill(@RequestBody ElectricityEntity electricitybill){
         return eb.save(electricitybill);
@@ -31,6 +32,7 @@ public class BillmanagerCon {
     @DeleteMapping("/elecbilldel")
     public void deletebill(@RequestBody ElectricityEntity electricitybill){
         eb.delete(electricitybill);
+
     }
 
 }
