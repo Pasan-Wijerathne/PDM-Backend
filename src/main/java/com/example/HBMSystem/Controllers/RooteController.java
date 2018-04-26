@@ -21,22 +21,26 @@ public class RooteController {
     //crud = create read update delete
 
     //read from db
-    @GetMapping("/users")
+    @GetMapping("/readdb")
     public List<TestEntity> getAll(){
         return repo.findAll();
     }
 
     //add to db // Craate //update
-//    @PostMapping(consumes = "äpplication/json", path = "/addUser")
-//    public TestEntity createTest(@RequestBody TestEntity test){
-//      return repo.save(test);
-//    }
+    @PostMapping("/addUser")
+    public TestEntity createTest(@RequestBody TestEntity test){
+      return repo.save(test);
+    }
 
-    @PostMapping()
 
     //delete from db
+<<<<<<< HEAD
     public void deleteTest(@RequestBody  TestEntity test)
     {
+=======
+    @DeleteMapping("/removeTest")
+    public void deleteTest(@RequestBody  TestEntity test){
+>>>>>>> 992cafd5ed304df60ac0fbb41593f79a65dc948c
         repo.delete(test);
     }
 }
