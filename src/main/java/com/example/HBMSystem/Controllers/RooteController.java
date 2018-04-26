@@ -35,7 +35,8 @@ public class RooteController {
     @PostMapping()
 
     //delete from db
-    public void deleteTest(@RequestBody  TestEntity test){
+    public void deleteTest(@RequestBody  TestEntity test)
+    {
         repo.delete(test);
     }
 }
