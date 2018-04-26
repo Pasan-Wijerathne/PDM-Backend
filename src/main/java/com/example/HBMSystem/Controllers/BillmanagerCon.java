@@ -1,6 +1,5 @@
 package com.example.HBMSystem.Controllers;
 
-
 import com.example.HBMSystem.Modulars.ElectricityEntity;
 import com.example.HBMSystem.Repos.ElectricitybillRepo;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -8,29 +8,29 @@ import java.sql.Blob;
 import java.util.Date;
 
 @Entity
-@Table(name = "electricitybill")
+@Table(name="electricitybill")
 
 public class ElectricityEntity {
 
     @Id()
     private int no;
 
-    @Column(name ="AccoNo")
+    @Column
     private int AccNo;
 
-    @Column(name = "usedUnits")
+    @Column
     private float usedUnits;
 
-    @Column(name = "UserId")
+    @Column
     private String UserId;
 
-    @Column(name = "Date")
+    @Column
     private Date Date;
 
-    @Column(name = "TotalAmount")
+    @Column
     private float TotalAmount;
 
-    @Column(name = "AddImage")
+    @Column
     private Blob AddImage;
 
     public int getNo() {
