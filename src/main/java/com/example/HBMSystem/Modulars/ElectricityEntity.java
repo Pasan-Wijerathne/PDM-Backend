@@ -12,25 +12,25 @@ import java.util.Date;
 
 public class ElectricityEntity {
 
-    @Id
+    @Id()
     private int no;
 
-    @Column
+    @Column(name ="AccoNo")
     private int AccNo;
 
-    @Column
+    @Column(name = "usedUnits")
     private float usedUnits;
 
-    @Column
+    @Column(name = "UserId")
     private String UserId;
 
-    @Column
+    @Column(name = "Date")
     private Date Date;
 
-    @Column
+    @Column(name = "TotalAmount")
     private float TotalAmount;
 
-    @Column
+    @Column(name = "AddImage")
     private Blob AddImage;
 
     public int getNo() {
