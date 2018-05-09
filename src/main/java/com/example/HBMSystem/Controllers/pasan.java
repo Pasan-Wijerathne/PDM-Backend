@@ -8,6 +8,8 @@ import java.util.List;
 @RestController
 @RequestMapping("/billmanager/")
 
+//tho server eka run karala nea ne
+
 public class pasan {
 
     @Autowired

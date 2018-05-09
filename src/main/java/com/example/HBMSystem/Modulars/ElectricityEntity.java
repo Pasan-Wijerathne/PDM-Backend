@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.sql.Blob;
+import java.text.DateFormat;
 import java.util.Date;
 
 @Entity
@@ -25,7 +26,8 @@ public class ElectricityEntity {
     private String userid;
 
     @Column
-    private Date date;
+   // private Date date;
+    private java.sql.Date date;
 
     @Column
     private float totalamount;
@@ -65,13 +67,13 @@ public class ElectricityEntity {
         this.userid = userid;
     }
 
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
+//    public Date getDate() {
+//        return date;
+//    }
+//
+//    public void setDate(Date date) {
+//        this.date = date;
+//    }
 
     public float getTotalamount() {
         return totalamount;
@@ -87,5 +89,13 @@ public class ElectricityEntity {
 
     public void setAddimage(Blob addimage) {
         this.addimage = addimage;
+    }
+
+    public java.sql.Date getDate() {
+        return date;
+    }
+
+    public void setDate(java.sql.Date date) {
+        this.date = date;
     }
 }
