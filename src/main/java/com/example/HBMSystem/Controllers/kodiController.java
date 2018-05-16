@@ -1,8 +1,6 @@
 package com.example.HBMSystem.Controllers;
-
 import com.example.HBMSystem.Modulars.electriceqEntity;
 import com.example.HBMSystem.Repos.electriceqRepo;
-
 import java.util.List;
 
 
@@ -26,10 +24,16 @@ public class kodiController {
             return eqkodi.findAll();
         }
 
-    //add edit from db
-    @PostMapping ("/electriceqedit")
+    //add from db
+    @PostMapping ("/electriceqadd")
     public electriceqEntity createbill(@RequestBody electriceqEntity electricequipments){
         return eqkodi.save(electricequipments) ;
+    }
+
+    //edit from db
+    @PostMapping ("/electriceqesave")
+    public List<electriceqEntity> createbills(@RequestBody List<electriceqEntity> electricequipments){
+        return eqkodi.saveAll(electricequipments);
     }
 
     //delete from db
