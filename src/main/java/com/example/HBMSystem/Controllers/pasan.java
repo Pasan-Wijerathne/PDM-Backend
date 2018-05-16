@@ -1,6 +1,5 @@
 package com.example.HBMSystem.Controllers;
 import com.example.HBMSystem.Modulars.ElectricityEntity;
-import com.example.HBMSystem.Modulars.WaterEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.example.HBMSystem.Repos.ElectricitybillRepo;
 import org.springframework.web.bind.annotation.*;
@@ -25,14 +24,16 @@ public class pasan {
 
     //add  from db
     @PostMapping ("/elecbilladd")
-    public ElectricityEntity createbill(@RequestBody ElectricityEntity electricitybill){
+    public ElectricityEntity createbills(@RequestBody ElectricityEntity electricitybill){
         return eb.save(electricitybill);
     }
 
-    //edit from db
+
+
+    //save from db
     @PostMapping ("/elecbillsa")
-    public List<ElectricityEntity> createbills(@RequestBody List<ElectricityEntity> electricitybills){
-        return eb.saveAll(electricitybills);
+    public List<ElectricityEntity> createbills(@RequestBody List<ElectricityEntity> electricitybill){
+        return eb.saveAll(electricitybill);
     }
 
     //delete from db
