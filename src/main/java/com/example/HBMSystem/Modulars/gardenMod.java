@@ -7,22 +7,27 @@ import javax.persistence.Table;
 import java.util.Date;
 
 @Entity
-@Table(name="vehicle")
+@Table(name="home_garden")
 
-public class vehicle {
+public class gardenMod {
 
     @Id
     private int no;
+
     @Column
-    private String expensestype;
+    private String type;
+
     @Column
     private String description;
+
     @Column
     private String userid;
-    @Column
-    private Date date;
+
     @Column
     private float totalamount;
+
+    @Column
+    private Date date;
 
     public int getNo() {
         return no;
@@ -32,12 +37,12 @@ public class vehicle {
         this.no = no;
     }
 
-    public String getExpensestype() {
-        return expensestype;
+    public String getType() {
+        return type;
     }
 
-    public void setExpensestype(String expensestype) {
-        this.expensestype = expensestype;
+    public void setType(String type) {
+        this.type = type;
     }
 
     public String getDescription() {
@@ -56,14 +61,6 @@ public class vehicle {
         this.userid = userid;
     }
 
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
-
     public float getTotalamount() {
         return totalamount;
     }
@@ -72,28 +69,13 @@ public class vehicle {
         this.totalamount = totalamount;
     }
 
+    public Date getDate() {
+        return date;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    public void setDate(Date date) {
+        this.date = date;
+    }
 
 
 
