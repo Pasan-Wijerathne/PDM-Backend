@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/telephone/")
+@RequestMapping("/mysim/")
 
 
-public class OshadiCon {
+public class MysimCon {
 
     @Autowired
     private MysimRepo sim1;
@@ -27,14 +27,14 @@ public class OshadiCon {
     //add edit from db
 
     @PostMapping("/simedit")
-    public mysim createsim(@RequestBody mysim bms) {
+    public mysim createsim(@RequestBody mysim mysim) {
 
-    return sim1.save(bms);
+    return sim1.save(mysim);
     }
 
     @DeleteMapping("/simdel")
-    public void deletesim(@RequestBody mysim bms){
-        sim1.delete(bms);
+    public void deletesim(@RequestBody mysim mysim){
+        sim1.delete(mysim);
     }
 
 
