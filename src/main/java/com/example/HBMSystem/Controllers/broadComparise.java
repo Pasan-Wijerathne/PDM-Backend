@@ -2,8 +2,8 @@ package com.example.HBMSystem.Controllers;
 
 
 
-import com.example.HBMSystem.Modulars.broadComMod;
-import com.example.HBMSystem.Repos.broadComRepo;
+import com.example.HBMSystem.Modulars.comparisonBroad;
+import com.example.HBMSystem.Repos.comparisonBroadRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,7 +16,7 @@ public class broadComparise {
     private comparisonBroadRepo broadCom;
 
     //read from the db
-    @GetMapping("/broadbandRead")
+    @GetMapping("/broadbandRead1")
     public List<comparisonBroad> getAll() {
         return broadCom.findAll();
     }
