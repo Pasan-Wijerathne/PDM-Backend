@@ -1,6 +1,12 @@
 package com.example.HBMSystem.Controllers;
 
 
+import com.example.HBMSystem.Modulars.telecomparison;
+import com.example.HBMSystem.Modulars.mysim;
+import org.springframework.beans.factory.annotation.Autowired;
+import com.example.HBMSystem.Repos.telecomparisonRepo;
+import org.springframework.web.bind.annotation.*;
+
 
 @RestController
 @RequestMapping("/telephone/")

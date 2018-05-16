@@ -1,6 +1,7 @@
 package com.example.HBMSystem.Modulars;
 
 
+import org.apache.naming.java.javaURLContextFactory;
 import org.hibernate.annotations.JoinColumnOrFormula;
 
 import javax.persistence.Column;
@@ -31,7 +32,7 @@ public class teleComMod {
     private String UserId;
 
     @Column
-    private date Date;
+    private java.sql.Date Date;
 
     @Column
     private float TotalAmount;
@@ -76,11 +77,11 @@ public class teleComMod {
         UserId = userId;
     }
 
-    public date getDate() {
+    public java.sql.Date getDate() {
         return Date;
     }
 
-    public void setDate(date date) {
+    public void setDate(java.sql.Date date) {
         Date = date;
     }
 
