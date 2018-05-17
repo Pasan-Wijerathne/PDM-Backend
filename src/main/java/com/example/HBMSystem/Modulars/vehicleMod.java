@@ -17,8 +17,17 @@ public class vehicleMod {
     private String expensestype;
     @Column
     private String description;
+
+    public Integer getUserid() {
+        return userid;
+    }
+
+    public void setUserid(Integer userid) {
+        this.userid = userid;
+    }
+
     @Column
-    private String userid;
+    private Integer userid;
     @Column
     private Date date;
     @Column
@@ -48,13 +57,6 @@ public class vehicleMod {
         this.description = description;
     }
 
-    public String getUserid() {
-        return userid;
-    }
-
-    public void setUserid(String userid) {
-        this.userid = userid;
-    }
 
     public Date getDate() {
         return date;

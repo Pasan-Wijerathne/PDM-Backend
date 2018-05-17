@@ -20,8 +20,16 @@ public class gardenMod {
     @Column
     private String description;
 
+    public Integer getUserid() {
+        return userid;
+    }
+
+    public void setUserid(Integer userid) {
+        this.userid = userid;
+    }
+
     @Column
-    private String userid;
+    private Integer userid;
 
     @Column
     private float totalamount;
@@ -53,13 +61,6 @@ public class gardenMod {
         this.description = description;
     }
 
-    public String getUserid() {
-        return userid;
-    }
-
-    public void setUserid(String userid) {
-        this.userid = userid;
-    }
 
     public float getTotalamount() {
         return totalamount;

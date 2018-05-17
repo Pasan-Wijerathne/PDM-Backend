@@ -1,10 +1,10 @@
 package com.example.HBMSystem.Controllers;
 
 import com.example.HBMSystem.Modulars.gasMod;
+import com.example.HBMSystem.Repos.gasRepo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.*;
+
 
 import java.util.List;
 
