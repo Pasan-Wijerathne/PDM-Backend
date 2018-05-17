@@ -2,8 +2,8 @@ package com.example.HBMSystem.Repos;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import com.example.HBMSystem.Modulars.telecomparison;
+import com.example.HBMSystem.Modulars.teleComMod;
 
-public interface telecomparisonRepo {
+public interface telecomparisonRepo extends JpaRepository <teleComMod,Integer>{
 
 }

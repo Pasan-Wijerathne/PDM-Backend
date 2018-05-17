@@ -24,9 +24,9 @@ public class broadbandCon {
     //add edit from db
 
     @PostMapping("/broadbandEdit")
-    public broadbandinfo createsim(@RequestBody broadbandinfo braodbandinfo) {
+    public broadbandinfo createsim(@RequestBody broadbandinfo broadbandinfo) {
 
-        return broad.save(broadband);
+        return broad.save(broadbandinfo);
     }
 
     @DeleteMapping("/broadDel")

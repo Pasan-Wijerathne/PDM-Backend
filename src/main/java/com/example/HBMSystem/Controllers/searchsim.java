@@ -9,25 +9,25 @@ import org.springframework.web.bind.annotation.*;
 
 public class searchsim {
     @Autowired
-    private searchsimRepo search;
+    private searchsimRepo search1;
 
     //read from the db
-    @GetMapping("/searchread")
-    public List<searchsimMod> getAll() {
-        return search.findAll();
-    }
+   // @GetMapping("/searchread")
+    //public List<searchsimMod> getAll() {
+     //   return search1.findAll();
+    //}
 
     //add edit from db
 
     @PostMapping("/searchEdit")
-    public searchsim createSearch(@RequestBody searchsimMod mysim) {
+    public searchsimMod createSearch(@RequestBody searchsimMod mysim) {
 
-        return search.save(mysim);
+        return search1.save(mysim);
     }
 
     @DeleteMapping("/searchdel")
     public void deleteSearch(@RequestBody searchsimMod mysim){
-        search.delete(mysim);
+        search1.delete(mysim);
     }
 
 }

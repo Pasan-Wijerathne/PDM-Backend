@@ -24,13 +24,13 @@ public class broadComparise {
     //add edit from db
 
     @PostMapping("/broadbandEdit")
-    public comparisonBroad createbroad2(@RequestBody comparisonBroad braodbandinfo) {
+    public comparisonBroad createbroad2(@RequestBody comparisonBroad broadbandinfo) {
 
         return broadCom.save(broadbandinfo);
     }
 
     @DeleteMapping("/broadDel")
-    public void deletebroad2(@RequestBody comparison broadbandinfo){
+    public void deletebroad2(@RequestBody comparisonBroad broadbandinfo){
         broadCom.delete(broadbandinfo);
     }
 
