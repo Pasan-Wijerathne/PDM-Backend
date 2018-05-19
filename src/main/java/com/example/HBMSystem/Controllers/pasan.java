@@ -28,8 +28,6 @@ public class pasan {
         return eb.save(electricitybill);
     }
 
-
-
     //save from db
     @PostMapping ("/elecbillsa")
     public List<ElectricityEntity> createbills(@RequestBody List<ElectricityEntity> electricitybill){
