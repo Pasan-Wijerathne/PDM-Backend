@@ -1,16 +1,15 @@
 package com.example.HBMSystem.Modulars;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "users")
 
 public class CreateuserEntity {
 
-    @Id()
+    @Id
+    @GeneratedValue
+    @Column(name ="userid")
     private Integer userid;
 
     @Column
@@ -33,9 +32,9 @@ public class CreateuserEntity {
         return userid;
     }
 
-    public void setUserid(Integer userid) {
-        this.userid = userid;
-    }
+    //public void setUserid(Integer userid) {
+      //  this.userid = userid;
+    //}
 
     public String getName() {
         return name;
