@@ -14,8 +14,16 @@ public class gasMod {
     private int no;
     @Column
     private Integer noofcylinders;
+    public Integer getUserid() {
+        return userid;
+    }
+
+    public void setUserid(Integer userid) {
+        this.userid = userid;
+    }
+
     @Column
-    private String userid;
+    private Integer userid;
     @Column
     private Date date;
     @Column
@@ -37,13 +45,7 @@ public class gasMod {
         this.noofcylinders = noofcylinders;
     }
 
-    public String getUserid() {
-        return userid;
-    }
 
-    public void setUserid(String userid) {
-        this.userid = userid;
-    }
 
     public Date getDate() {
         return date;
