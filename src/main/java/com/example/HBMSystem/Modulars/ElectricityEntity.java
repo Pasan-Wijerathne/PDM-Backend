@@ -1,9 +1,6 @@
 package com.example.HBMSystem.Modulars;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.sql.Blob;
 import java.text.DateFormat;
 import java.util.Date;
@@ -13,8 +10,10 @@ import java.util.Date;
 
 public class ElectricityEntity {
 
-    @Id()
-    private int no;
+    @Id
+    @GeneratedValue
+    @Column(name ="no")
+    private Integer no;
 
     @Column
     private String accno;
@@ -23,7 +22,7 @@ public class ElectricityEntity {
     private float usedunits;
 
     @Column
-    private String userid;
+    private Integer userid;
 
     @Column
    // private Date date;
@@ -35,11 +34,12 @@ public class ElectricityEntity {
     @Column
     private Blob addimage;
 
-    public int getNo() {
+
+    public Integer getNo() {
         return no;
     }
 
-    public void setNo(int no) {
+    public void setNo(Integer no) {
         this.no = no;
     }
 
@@ -59,21 +59,21 @@ public class ElectricityEntity {
         this.usedunits = usedunits;
     }
 
-    public String getUserid() {
+    public Integer getUserid() {
         return userid;
     }
 
-    public void setUserid(String userid) {
+    public void setUserid(Integer userid) {
         this.userid = userid;
     }
 
-//    public Date getDate() {
-//        return date;
-//    }
-//
-//    public void setDate(Date date) {
-//        this.date = date;
-//    }
+    public java.sql.Date getDate() {
+        return date;
+    }
+
+    public void setDate(java.sql.Date date) {
+        this.date = date;
+    }
 
     public float getTotalamount() {
         return totalamount;
@@ -89,13 +89,5 @@ public class ElectricityEntity {
 
     public void setAddimage(Blob addimage) {
         this.addimage = addimage;
-    }
-
-    public java.sql.Date getDate() {
-        return date;
-    }
-
-    public void setDate(java.sql.Date date) {
-        this.date = date;
     }
 }
