@@ -7,7 +7,7 @@ import javax.persistence.Table;
 import java.util.Date;
 
 @Entity
-@Table(name="home_garden")
+@Table(name="house_garden")
 
 public class gardenMod {
 
