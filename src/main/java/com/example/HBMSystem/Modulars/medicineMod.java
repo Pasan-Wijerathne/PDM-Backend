@@ -24,6 +24,8 @@ public class medicineMod {
 
     @Column
     private Integer userid;
+    @Column
+    private String illness;
 
     public String getIllness() {
         return illness;
@@ -33,8 +35,7 @@ public class medicineMod {
         this.illness = illness;
     }
 
-    @Column
-    private String illness;
+
 
     public java.sql.Date getDate() {
         return date;
