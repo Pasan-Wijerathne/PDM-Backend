@@ -13,8 +13,7 @@ public class vehicleMod {
 
     @Id
     private int no;
-    @Column
-    private String expensestype;
+   
     @Column
     private String description;
 
@@ -51,13 +50,7 @@ public class vehicleMod {
         this.no = no;
     }
 
-    public String getExpensestype() {
-        return expensestype;
-    }
 
-    public void setExpensestype(String expensestype) {
-        this.expensestype = expensestype;
-    }
 
     public String getDescription() {
         return description;

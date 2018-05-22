@@ -25,6 +25,17 @@ public class medicineMod {
     @Column
     private Integer userid;
 
+    public String getIllness() {
+        return illness;
+    }
+
+    public void setIllness(String illness) {
+        this.illness = illness;
+    }
+
+    @Column
+    private String illness;
+
     public java.sql.Date getDate() {
         return date;
     }
