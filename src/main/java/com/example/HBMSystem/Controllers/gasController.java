@@ -1,13 +1,18 @@
+
 package com.example.HBMSystem.Controllers;
 
+
+import org.springframework.web.bind.annotation.*;
 import com.example.HBMSystem.Modulars.gasMod;
+import com.example.HBMSystem.Repos.gasRepo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+@RestController
+@RequestMapping("/gas")
 public class gasController {
 
     @Autowired
@@ -40,3 +45,5 @@ public class gasController {
         g.delete(gas);
     }
 }
+
+

@@ -14,10 +14,28 @@ public class gasMod {
     private int no;
     @Column
     private Integer noofcylinders;
+    public Integer getUserid() {
+        return userid;
+    }
+
+    public void setUserid(Integer userid) {
+        this.userid = userid;
+    }
+
     @Column
-    private String userid;
+    private Integer userid;
+
+    public java.sql.Date getDate() {
+        return date;
+    }
+
+    public void setDate(java.sql.Date date) {
+        this.date = date;
+    }
+
     @Column
-    private Date date;
+//    private Date date;
+    private java.sql.Date date;
     @Column
     private float totalamount;
 
@@ -37,21 +55,8 @@ public class gasMod {
         this.noofcylinders = noofcylinders;
     }
 
-    public String getUserid() {
-        return userid;
-    }
 
-    public void setUserid(String userid) {
-        this.userid = userid;
-    }
 
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
 
     public float getTotalamount() {
         return totalamount;

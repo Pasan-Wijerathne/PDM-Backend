@@ -1,3 +1,4 @@
+
 package com.example.HBMSystem.Repos;
 
 
@@ -7,3 +8,4 @@ import com.example.HBMSystem.Modulars.teleComMod;
 public interface telecomparisonRepo extends JpaRepository <teleComMod,Integer>{
 
 }
+

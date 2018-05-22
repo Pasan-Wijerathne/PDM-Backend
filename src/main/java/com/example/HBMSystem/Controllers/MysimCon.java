@@ -37,7 +37,10 @@ public class MysimCon {
         sim1.delete(mysim);
     }
 
-
+    @PostMapping ("/simadd")
+    public mysim createbill(@RequestBody mysim mysim){
+        return sim1.save(mysim);
+    }
 
 
 

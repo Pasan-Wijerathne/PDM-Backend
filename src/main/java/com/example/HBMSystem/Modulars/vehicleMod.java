@@ -13,14 +13,32 @@ public class vehicleMod {
 
     @Id
     private int no;
-    @Column
-    private String expensestype;
+
     @Column
     private String description;
+
+    public Integer getUserid() {
+        return userid;
+    }
+
+    public void setUserid(Integer userid) {
+        this.userid = userid;
+    }
+
     @Column
-    private String userid;
+    private Integer userid;
+
+    public java.sql.Date getDate() {
+        return date;
+    }
+
+    public void setDate(java.sql.Date date) {
+        this.date = date;
+    }
+
     @Column
-    private Date date;
+//    private Date date;
+    private java.sql.Date date;
     @Column
     private float totalamount;
 
@@ -32,13 +50,7 @@ public class vehicleMod {
         this.no = no;
     }
 
-    public String getExpensestype() {
-        return expensestype;
-    }
 
-    public void setExpensestype(String expensestype) {
-        this.expensestype = expensestype;
-    }
 
     public String getDescription() {
         return description;
@@ -48,21 +60,8 @@ public class vehicleMod {
         this.description = description;
     }
 
-    public String getUserid() {
-        return userid;
-    }
 
-    public void setUserid(String userid) {
-        this.userid = userid;
-    }
 
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
 
     public float getTotalamount() {
         return totalamount;

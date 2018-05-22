@@ -7,7 +7,7 @@ import javax.persistence.Table;
 import java.util.Date;
 
 @Entity
-@Table(name="home_garden")
+@Table(name="house_garden")
 
 public class gardenMod {
 
@@ -20,14 +20,31 @@ public class gardenMod {
     @Column
     private String description;
 
+    public Integer getUserid() {
+        return userid;
+    }
+
+    public void setUserid(Integer userid) {
+        this.userid = userid;
+    }
+
     @Column
-    private String userid;
+    private Integer userid;
 
     @Column
     private float totalamount;
 
+    public java.sql.Date getDate() {
+        return date;
+    }
+
+    public void setDate(java.sql.Date date) {
+        this.date = date;
+    }
+
     @Column
-    private Date date;
+//    private Date date;
+    private java.sql.Date date;
 
     public int getNo() {
         return no;
@@ -53,13 +70,6 @@ public class gardenMod {
         this.description = description;
     }
 
-    public String getUserid() {
-        return userid;
-    }
-
-    public void setUserid(String userid) {
-        this.userid = userid;
-    }
 
     public float getTotalamount() {
         return totalamount;
@@ -69,13 +79,7 @@ public class gardenMod {
         this.totalamount = totalamount;
     }
 
-    public Date getDate() {
-        return date;
-    }
 
-    public void setDate(Date date) {
-        this.date = date;
-    }
 
 
 

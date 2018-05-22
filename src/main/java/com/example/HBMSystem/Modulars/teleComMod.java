@@ -26,24 +26,24 @@ public class teleComMod {
     private int number;
 
     @Column
-    private float periodCharge;
+    private float periodcharge;
 
     @Column
-    private String UserId;
+    private String userid;
 
     @Column
-    private java.sql.Date Date;
+    private java.sql.Date date;
 
     @Column
-    private float TotalAmount;
+    private float totalamount;
 
     public int getNo() {
         return no;
     }
 
-    public void setNo(int no) {
-        this.no = no;
-    }
+//    public void setNo(int no) {
+//        this.no = no;
+//    }
 
     public String getLinetype() {
         return linetype;
@@ -61,35 +61,35 @@ public class teleComMod {
         this.number = number;
     }
 
-    public float getPeriodCharge() {
-        return periodCharge;
+    public float getPeriodcharge() {
+        return periodcharge;
     }
 
-    public void setPeriodCharge(float periodCharge) {
-        this.periodCharge = periodCharge;
+    public void setPeriodcharge(float periodcharge) {
+        this.periodcharge = periodcharge;
     }
 
-    public String getUserId() {
-        return UserId;
+    public String getUserid() {
+        return userid;
     }
 
-    public void setUserId(String userId) {
-        UserId = userId;
+    public void setUserid(String userid) {
+        this.userid = userid;
     }
 
     public java.sql.Date getDate() {
-        return Date;
+        return date;
     }
 
     public void setDate(java.sql.Date date) {
-        Date = date;
+        this.date = date;
     }
 
-    public float getTotalAmount() {
-        return TotalAmount;
+    public float getTotalamount() {
+        return totalamount;
     }
 
-    public void setTotalAmount(float totalAmount) {
-        TotalAmount = totalAmount;
+    public void setTotalamount(float totalamount) {
+        this.totalamount = totalamount;
     }
 }

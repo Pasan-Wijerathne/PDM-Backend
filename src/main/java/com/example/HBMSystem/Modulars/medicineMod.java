@@ -14,10 +14,40 @@ public class medicineMod {
     private int no;
     @Column
     private String description;
+    public Integer getUserid() {
+        return userid;
+    }
+
+    public void setUserid(Integer userid) {
+        this.userid = userid;
+    }
+
     @Column
-    private String userid;
+    private Integer userid;
     @Column
-    private Date date;
+    private String illness;
+
+    public String getIllness() {
+        return illness;
+    }
+
+    public void setIllness(String illness) {
+        this.illness = illness;
+    }
+
+
+
+    public java.sql.Date getDate() {
+        return date;
+    }
+
+    public void setDate(java.sql.Date date) {
+        this.date = date;
+    }
+
+    @Column
+//    private Date date;
+    private java.sql.Date date;
     @Column
     private float totalamount;
 
@@ -37,21 +67,8 @@ public class medicineMod {
         this.description = description;
     }
 
-    public String getUserid() {
-        return userid;
-    }
 
-    public void setUserid(String userid) {
-        this.userid = userid;
-    }
 
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
 
     public float getTotalamount() {
         return totalamount;
