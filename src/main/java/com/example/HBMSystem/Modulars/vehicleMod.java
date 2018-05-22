@@ -28,8 +28,18 @@ public class vehicleMod {
 
     @Column
     private Integer userid;
+
+    public java.sql.Date getDate() {
+        return date;
+    }
+
+    public void setDate(java.sql.Date date) {
+        this.date = date;
+    }
+
     @Column
-    private Date date;
+//    private Date date;
+    private java.sql.Date date;
     @Column
     private float totalamount;
 
@@ -58,13 +68,7 @@ public class vehicleMod {
     }
 
 
-    public Date getDate() {
-        return date;
-    }
 
-    public void setDate(Date date) {
-        this.date = date;
-    }
 
     public float getTotalamount() {
         return totalamount;
