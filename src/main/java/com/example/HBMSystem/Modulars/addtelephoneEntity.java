@@ -2,13 +2,11 @@ package com.example.HBMSystem.Modulars;
 
 import javax.persistence.*;
 import java.sql.Blob;
-import java.text.DateFormat;
-import java.util.Date;
+import java.sql.Date;
 
 @Entity
-@Table(name = "electricitybill")
-
-public class ElectricityEntity {
+@Table(name = "telephonebill")
+public class addtelephoneEntity {
 
     @Id
     @GeneratedValue
@@ -16,16 +14,18 @@ public class ElectricityEntity {
     private Integer no;
 
     @Column
-    private String accno;
+    private String linetype;
 
     @Column
-    private float usedunits;
+    private Integer number;
 
     @Column
     private Integer userid;
 
     @Column
-   // private Date date;
+    private float periodcharge;
+
+    @Column
     private java.sql.Date date;
 
     @Column
@@ -39,24 +39,24 @@ public class ElectricityEntity {
         return no;
     }
 
-    public void setNo(Integer no) {
-        this.no = no;
+//    public void setNo(Integer no) {
+//        this.no = no;
+//    }
+
+    public String getLinetype() {
+        return linetype;
     }
 
-    public String getAccno() {
-        return accno;
+    public void setLinetype(String linetype) {
+        this.linetype = linetype;
     }
 
-    public void setAccno(String accno) {
-        this.accno = accno;
+    public Integer getNumber() {
+        return number;
     }
 
-    public float getUsedunits() {
-        return usedunits;
-    }
-
-    public void setUsedunits(float usedunits) {
-        this.usedunits = usedunits;
+    public void setNumber(Integer number) {
+        this.number = number;
     }
 
     public Integer getUserid() {
@@ -67,11 +67,19 @@ public class ElectricityEntity {
         this.userid = userid;
     }
 
-    public java.sql.Date getDate() {
+    public float getPeriodcharge() {
+        return periodcharge;
+    }
+
+    public void setPeriodcharge(float periodcharge) {
+        this.periodcharge = periodcharge;
+    }
+
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(java.sql.Date date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
