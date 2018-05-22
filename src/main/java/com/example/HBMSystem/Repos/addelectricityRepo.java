@@ -14,4 +14,6 @@ public interface addelectricityRepo extends JpaRepository<addelectricityEntity,I
     @Query("from addelectricityEntity where date=:date and accno=:accno")
     public addelectricityEntity getByDateAndAccno(@Param("date") java.sql.Date date , @Param("accno") String accno);
 
+    @Query("from addelectricityEntity where totalamount=:totalamount")
+    public addelectricityEntity getByTotalamount(@Param("totalamount") float totalamount);
 }

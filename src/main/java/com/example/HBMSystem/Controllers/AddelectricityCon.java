@@ -22,6 +22,11 @@ public class AddelectricityCon {
         return eb.getByAccno(accno);
     }
 
+    public addelectricityEntity getByAmount(@Param("totalamount")float totalamount)
+    {
+        return eb.getByTotalamount(totalamount);
+    }
+
     @GetMapping("/ecdateid")
     public addelectricityEntity getByDateandAccno(@Param("date") java.sql.Date date , @Param("accno") String accno)
     {
