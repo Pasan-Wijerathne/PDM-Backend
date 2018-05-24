@@ -26,8 +26,8 @@ public class addwaterEntity {
     @Column
     private float totalamount;
 
-    @Column
-    private Blob addimage;
+//    @Column
+//    private Blob addimage;
 
 
     public Integer getNo() {
@@ -70,11 +70,12 @@ public class addwaterEntity {
         this.totalamount = totalamount;
     }
 
-    public Blob getAddimage() {
-        return addimage;
-    }
-
-    public void setAddimage(Blob addimage) {
-        this.addimage = addimage;
-    }
+//    public Blob getAddimage() {
+//        return addimage;
+//    }
+//
+//    public void setAddimage(Blob addimage) {
+//        this.addimage = addimage;
+//    }
 }
+

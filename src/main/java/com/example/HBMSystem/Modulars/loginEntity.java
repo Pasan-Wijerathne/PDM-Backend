@@ -1,4 +1,6 @@
-package com.example.HBMSystem.Modulars;
-
-public class loginEntity {
-}
+//package com.example.HBMSystem.Modulars;
+//
+//public class loginEntity {
+//
+//
+//}

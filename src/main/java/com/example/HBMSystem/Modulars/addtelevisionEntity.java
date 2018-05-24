@@ -26,8 +26,8 @@ public class addtelevisionEntity {
     @Column
     private float totalamount;
 
-    @Column
-    private Blob addimage;
+//    @Column
+//    private Blob addimage;
 
 
     public Integer getNo() {
@@ -70,11 +70,11 @@ public class addtelevisionEntity {
         this.totalamount = totalamount;
     }
 
-    public Blob getAddimage() {
-        return addimage;
-    }
-
-    public void setAddimage(Blob addimage) {
-        this.addimage = addimage;
-    }
+//    public Blob getAddimage() {
+//        return addimage;
+//    }
+//
+//    public void setAddimage(Blob addimage) {
+//        this.addimage = addimage;
+//    }
 }
