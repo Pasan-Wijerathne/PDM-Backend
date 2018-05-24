@@ -27,7 +27,7 @@ public class electriceqEntity {
     private int noofitems;
 
     @Column
-    private Date expiredate;
+    private java.sql.Date expiredate;
 
     @Column
     private float noofhours;
@@ -76,7 +76,7 @@ public class electriceqEntity {
         return expiredate;
     }
 
-    public void setExpiredate(Date expiredate) {
+    public void setExpiredate(java.sql.Date expiredate) {
         this.expiredate = expiredate;
     }
 
