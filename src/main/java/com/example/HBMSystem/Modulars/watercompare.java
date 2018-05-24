@@ -1,9 +1,6 @@
 package com.example.HBMSystem.Modulars;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.sql.Blob;
 import java.util.Date;
 
@@ -13,7 +10,9 @@ import java.util.Date;
 public class watercompare {
 
     @Id
-    private int no;
+    @GeneratedValue
+    @Column(name ="no")
+    private Integer no;
 
     @Column
     private String accno;
@@ -30,14 +29,11 @@ public class watercompare {
     @Column
     private float totalamount;
 
-    @Column
-    private Blob addimage;
-
-    public int getNo() {
+    public Integer getNo() {
         return no;
     }
 
-    public void setNo(int no) {
+    public void setNo(Integer no) {
         this.no = no;
     }
 
@@ -79,13 +75,5 @@ public class watercompare {
 
     public void setTotalamount(float totalamount) {
         this.totalamount = totalamount;
-    }
-
-    public Blob getAddimage() {
-        return addimage;
-    }
-
-    public void setAddimage(Blob addimage) {
-        this.addimage = addimage;
     }
 }

@@ -1,5 +1,6 @@
 package com.example.HBMSystem.Controllers;
 
+import com.example.HBMSystem.Modulars.insurance;
 import com.example.HBMSystem.Modulars.watercompare;
 import com.example.HBMSystem.Repos.watercompareRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +10,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping ("/watercompare/")
-public class pavithra {
+
+public class WaterComCon {
 
     @Autowired
     private watercompareRepo wc;
@@ -21,6 +23,7 @@ public class pavithra {
         return wc.findAll();
     }
 
+
     //add edit from DB
     @PostMapping("/wcAddEdit")
     public watercompare createcompare (@RequestBody watercompare waterBill)
@@ -28,10 +31,12 @@ public class pavithra {
         return wc.save(waterBill);
     }
 
+
     //delete from DB
     @DeleteMapping("/wcdelete")
     public void deletecompare (@RequestBody watercompare waterBill)
     {
         wc.delete(waterBill);
     }
+
 }

@@ -13,7 +13,7 @@ public class vehicleMod {
 
     @Id
     private int no;
-   
+
     @Column
     private String description;
 
